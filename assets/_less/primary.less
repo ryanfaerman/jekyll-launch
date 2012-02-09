@@ -1,0 +1,298 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab&subset=latin#);
+@import url(http://fonts.googleapis.com/css?family=Copse&subset=latin#);
+@import url(http://fonts.googleapis.com/css?family=Molengo&subset=latin#);
+
+html * {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 1em/1.4em "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+	&.dark {
+		background: #030;
+		background: rgb(10,20,3);
+	}
+}
+
+a {
+	color: #0134c5;
+	color: #999900;
+	background-color: transparent;
+	text-decoration: none;
+	font-weight: normal;
+
+	&:hover {
+		color: #999900;
+		color: rgb(148,162,21);
+		color: #0134c5;
+	}
+
+	&:active, &:focus {
+		border: none;
+		outline: 0;
+	}
+
+	img {
+		border: none;
+	}
+}
+
+.container {
+
+  width: 700px;
+  margin: 0 auto;
+
+	&.content {
+		background: #fff;
+		padding: 50px 20px;
+		min-height: 400px;
+
+		h1 {
+			margin-bottom: 55px;
+			margin-top: 15px;
+			font: 2.5em/1.3em 'Josefin Slab',  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			text-align: center;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		h2 {
+			font-size: 1.4em;
+			letter-spacing: .1em;
+			font-weight: normal;
+			margin: 15px 0px 15px 8px;
+			padding: 5px 0px 5px 5px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		h3, h4, h5 {
+			font-size: 1.1em;
+			letter-spacing: .1em;
+			font-weight: bold;
+			margin: 16px 0 12px 10px;
+			padding: 5px 0px 5px 5px;
+		}
+
+		h4 {
+			font-size: 1.0em;
+			margin-top: 10px;
+		}
+
+		h5 {
+			font-size: 0.9em;
+			margin-top: 0;
+		}
+
+
+		p {
+			padding: 0px 5px 15px 15px;
+		}
+
+		ul, ol {
+			padding: 0px 5px 15px 45px;
+		}
+
+		img {
+			display: block;
+			margin: 25px auto;
+
+			&.left, &.right {
+				display: inline;
+				margin: 15px;
+			}
+
+			&.left {
+				float: left;
+				margin-left: 0;
+			}
+
+			&.right {
+				float: right;
+				margin-right: 0;
+			}
+		}
+
+	}
+
+	&::before,  &::after{
+  		display: table;
+  		content: "";
+  	}
+	 &::after{
+		clear: both;
+	}
+
+	&.related {
+		color: #333;
+		margin-top: 50px;
+
+		font-size: 90%;
+
+		h2 {
+			border-bottom: none;
+			//border-top: 2px solid #eee;
+			padding-top: 1em;
+		}
+	}
+
+	&.footer {
+		color: #999;
+		border-top: 4px solid #eee;
+    margin-top: 1em;
+    overflow: hidden;
+    font-size: .9em;
+
+
+    .contact {
+    	float: left;
+      margin-right: 3em;
+      margin-bottom: 40px;
+    }
+	}
+
+	ul.posts {
+		list-style-type: none;
+		color: #999;
+		padding-left: 25px;
+		span {
+			color: #aaa;
+	    font-family: Monaco, "Courier New", monospace;
+	    font-size: 80%;
+		}
+	}
+
+	.home {
+		h1 {
+			margin-bottom: 25px;
+		}
+	}
+
+}
+
+.navbar {
+	background: rgba(0,0,0, .8);
+
+  line-height: 18px;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #000;
+  font: .8em/1.1 "Lucida Grande", Lucida, Verdana, sans-serif;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+
+  border-bottom: 1px solid #000;
+
+
+  .container {
+  	padding: 0 10px;
+
+  }
+  .brand {
+  	 &:hover {
+		  text-decoration: none;
+		}
+
+		float: left;
+	  display: block;
+	  padding: 8px 20px 12px;
+	  margin-left: -20px;
+	  font-size: 20px;
+	  font-weight: 200;
+	  line-height: 1;
+	  color: #ffffff;
+  }
+
+  .nav {
+  	position: relative;
+  	left: 0;
+  	display: block;
+  	float: left;
+  	margin: 0 10px 0 0;
+
+  	> li {
+  		display: block;
+  		float: left;
+ 			> a {
+ 				float: none;
+ 				line-height: 19px;
+ 				display: block;
+ 				padding: 10px 10px 11px;
+ 				color: #999;
+ 				text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+ 				&.active, &:hover {
+ 					color: #fff;
+ 					background-color: rgba(0,0,0,.5);
+ 				}
+ 			}
+  	}
+  }
+ 
+}
+
+.about {
+	.container {
+		
+		&.content {
+			background: url(/assets/img/ryan_and_ayelet_green.png) no-repeat;
+			background-position: 50% 50%;
+			height: 700px;
+			background-size: 1200px 800px;
+			width: 1200px;
+
+			#intro {
+				position: relative;
+				color: #996633;
+				color: rgb(235,220,199);
+				width: 500px;
+				background: #000;
+				background: rgba(0,0,0, .8);
+				font-weight: normal;
+				line-height: 1.4em;
+				letter-spacing: .1em;
+				left: 30px;
+				top: 150px;
+				padding: 15px;
+				padding-top: 0px;
+				font: 1.1em/1.4em Copse, "Lucida Grande", Verdana, Geneva, Sans-serif;
+				
+				-webkit-border-radius: 15px;
+				-moz-border-radius: 15px;
+				border-radius: 15px;
+				min-height: 0px;
+
+				h1 {
+					text-align: left;
+					margin: 0;
+					padding: 0;
+					padding-top: 25px;
+					padding-bottom: 20px;
+					border: none;
+				}
+
+				ul {
+					list-style-type: none;
+					padding: 0;
+					
+					li {
+						float: left;
+						padding: 2px;
+					}
+
+					&::before,  &::after {
+			  		display: table;
+			  		content: "";
+			  	}
+					&::after {
+						clear: both;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Notebook"
+---
+
+<div class="home">
+  <h1>Notebook</h1>
+  <p>I don't write things terribly often, but when I do &mdash; it'll be here.</p>
+  <ul class="posts">
+    {% for post in site.posts %}
+    	{% unless post.category == 'projects' %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</div>
+
+{% include footer.html %}

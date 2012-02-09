@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Ryan Faerman" />
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/primary.css">
+  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.1.5/less-1.1.5.min.js"></script>-->
+</head>
+<body class="{{ page.body_class }}">
+
+<div class="navbar">
+  <div class="container">
+   <a class="brand" href="/">Ryan Faerman</a>
+   <ul class="nav">
+    <li><a href="/">home</a></li>
+    <li><a href="/notebook">notebook</a></li>
+    <li><a href="/projects">projects</a></li>
+   </ul>
+  </div>
+</div>
+
+<div class="container content">
+  {{ content }}
+</div>
+
+</body>
+</html>
